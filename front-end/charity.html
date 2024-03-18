@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charity Page</title>
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- font awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- owl css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- owl theme css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+        integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <!-- css common -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/home.css"> -->
+    <!-- index css -->
+    <link rel="stylesheet" href="css/charity.css">
+
+</head>
+<style>
+    .video-container {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        /* Adjust as needed */
+        overflow: hidden;
+    }
+
+    #video-bg {
+        border: 1px solid black;
+        position: absolute;
+        top: 0;
+        left: 0;
+        min-width: 100%;
+        height: 90%;
+        z-index: 0;
+    }
+
+    .mission {
+        position: relative;
+    }
+
+    .video-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    #video-bg {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .bg-grad-mssn {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8));
+    }
+
+    .mission-cont {
+        position: relative;
+        z-index: 1;
+        padding: 20px;
+    }
+/* 
+    .intro-head {
+        color: #fff;
+    }
+
+    .text-white {
+        color: #fff;
+    } */
+</style>
+
+<body>
+    <!-- hero -->
+    <div class="hero container-fluid " style="background-image: url(images/DSC01126.JPG);">
+        <div class="bg-grad"></div>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg ">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/Royalties-Service-Connect.png" alt="" class="img-responsive img-fluid logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="about.html">About <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="gallery.html">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="calender.html">Calender</a>
+                        </li>
+                    </ul>
+                </div>
+                <a href="charity.html">
+                    <img src="images/Charity-Logo-sample-1 (1).png" alt="" class="img-fluid img-responsive w-25" style="width: 100px !important;">
+                </a>
+            </nav>
+        </div>
+        <div class="container">
+            <h1 class="d-flex justify-content-center fw-bolder text-light"></h1>
+        </div>
+    </div>
+
+    <!-- introduction  -->
+    <div class="container mt-5 d-flex align-items-center pt-5 pb-5">
+        <div class="row">
+            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12 intro-pic-cont">
+                <img src="images/DSC00888.JPG" alt="" class="img-fluid img-responsive intro-pic-1">
+                <img src="images/DSC00902.JPG" alt="" class="img-fluid img-responsive intro-pic-2">
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12 d-flex align-items-center">
+                <div class="container">
+                    <h1 class="intro-head">
+                        <span class="intro-head-1">
+                            Introducing
+                        </span><br> Royalties Charity Foundation
+                    </h1>
+                    <p class="">
+                        RB Corp's charitable initiative is dedicated to uplifting and empowering
+                        marginalized communities across India. Through a multifaceted approach, this
+                        initiative aims to address the fundamental needs of individuals who are less
+                        educated or illiterate, as well as housewives and widows facing societal constraints.
+                        The cornerstone of our efforts is the "Service Connect" program, through which we
+                        provide comprehensive training tailored to enhance skills and knowledge, leading to
+                        meaningful employment opportunities and personal development. Moreover, we are
+                        committed to recognizing the accomplishments of our beneficiaries by presenting
+                        them with certificates for their achievements, thereby boosting their confidence
+                        and credentials.
+                        In addition to educational empowerment, RB Corp is also dedicated to providing
+                        essential goods such as stationery, clothes, and other necessities to those in need.
+                        Furthermore, we understand the critical importance of alleviating food insecurity,
+                        and as such, our initiative includes the distribution of free food to individuals and
+                        families who are struggling to meet this basic need
+                    </p>
+                    <div class="btn-container mt-3">
+                        <a href="about.html">
+                            <button class="btn btn-intro">Learn More</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- introduction -->
+    <!-- Who are we  -->
+    <div class="container mt-5 d-flex align-items-center pt-5 pb-5">
+        <div class="row">
+
+            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12 d-flex align-items-center">
+                <div class="container">
+                    <h1 class="intro-head">
+                        <span class="intro-head-1">
+                            Who
+                        </span> Are We ?
+                    </h1>
+                    <p class="mt-3">
+                        RB Corp's Charity is a compassionate initiative aimed at empowering individuals in need through
+                        education and support. Through our partnership with "Service Connect," we offer tailored
+                        training programs to individuals who may be less educated, illiterate, housewives, widows facing
+                        societal restrictions, and others seeking a more secure future. Those who successfully complete
+                        these training programs receive certificates, recognizing their dedication and achievement.
+                        In addition to education and training, we provide essential goods such as stationery, clothing,
+                        and
+                        other necessities to support the daily lives of those facing challenges. Furthermore, we
+                        prioritize
+                        addressing immediate needs by distributing free food to individuals experiencing food
+                        insecurity.
+                        At RB Corp's Charity, we believe in creating opportunities for personal and professional
+                        development, fostering a sense of empowerment and dignity among those we aim to serve.
+                        Through collaborative efforts and community support, we strive to make a meaningful impact in
+                        the lives of individuals facing adversity.
+
+                    </p>
+                    <div class="btn-container mt-3">
+                        <a href="about.html">
+                            <button class="btn btn-intro">Learn More</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12 intro-pic-cont">
+                <img src="images/DSC01084.JPG" alt="" class="img-fluid img-responsive intro-pic-1">
+                <img src="images/DSC01089.JPG" alt="" class="img-fluid img-responsive intro-pic-2">
+            </div>
+        </div>
+    </div>
+    <!-- Who are we -->
+
+    <!-- our mission -->
+    <!-- <div class="container-fluid vh-100 d-flex align-items-center mission"
+        >
+        <div class="bg-grad-mssn"></div>
+
+        <div class="video-container">
+            <video autoplay muted loop id="video-bg">
+                <source src="images/C0045.MP4" type="video/mp4">
+
+            </video>
+            
+        </div>
+
+
+        <div class="container mission-cont">
+            <h1 class="intro-head text-center">
+                <span class="intro-head-1">
+                    Our
+                </span> Mission
+            </h1>
+            <p class="text-white">
+                The mission of RB Corp's charity initiative is to empowering education
+                opportunities, alleviate hunger, poverty, and social inequalities by providing
+                free food and essential goods to marginalized communities. Through
+                targeted outreach and sustainable programs, our mission is to uplift
+                individuals from vulnerable backgrounds, equip them with necessary skills,
+                and break societal boundaries hindering their progress. RB Corp also keeps
+                kids at priority by providing them school necessities like stationary items and
+                toys, etc.
+            </p>
+        </div>
+    </div> -->
+
+
+    <div class="container-fluid vh-100 d-flex align-items-center mission">
+        <div class="video-container">
+            <video autoplay muted loop id="video-bg">
+                <source src="images/C0045.MP4" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="bg-grad-mssn"></div>
+
+        <div class="container mission-cont">
+            <h1 class="intro-head text-center">
+                <span class="intro-head-1">Our</span> Mission
+            </h1>
+            <p class="text-white">
+                The mission of RB Corp's charity initiative is to empowering education
+                opportunities, alleviate hunger, poverty, and social inequalities by providing
+                free food and essential goods to marginalized communities. Through
+                targeted outreach and sustainable programs, our mission is to uplift
+                individuals from vulnerable backgrounds, equip them with necessary skills,
+                and break societal boundaries hindering their progress. RB Corp also keeps
+                kids at priority by providing them school necessities like stationary items and
+                toys, etc.
+            </p>
+        </div>
+    </div>
+
+    <!-- our mission -->
+
+    <!-- execution planm -->
+    <div class="container pt-5 pb-5 mb-5 mt-5">
+        <h1 class="intro-head text-center">
+            <span class="intro-head-1">
+                Execution
+            </span> Plan
+        </h1>
+        <div class="owl-carousel owl-theme h-100 mt-5">
+            <div class="item crsl-1 d-flex align-items-center ">
+                <div class="card plan-card">
+                    <h2 class="intro-head">
+                        Networking and Collaboration
+                    </h2>
+                    <p>
+                        RB Corp can reach out to politicians
+                        and generous individuals through networking events, social media
+                        outreach, and direct communication to build partnerships and
+                        alliances.
+                    </p>
+                </div>
+            </div>
+            <div class="item crsl-2 d-flex align-items-center ">
+                <div class="card plan-card">
+                    <h2 class="intro-head">
+                        Creating Awareness
+                    </h2>
+                    <p>
+                        Utilize various media platforms to create
+                        awareness about the charity initiative, its objectives, and the impact
+                        it can make. This could involve press releases, social media
+                        campaigns, and community engagement programs.
+                    </p>
+                </div>
+            </div>
+            <div class="item crsl-3 d-flex align-items-center ">
+                <div class="card plan-card">
+                    <h2 class="intro-head">
+                        Building Infrastructure
+                    </h2>
+                    <p>
+                        Establishing distribution centers, training
+                        facilities, and resource hubs across different regions of India to
+                        efficiently deliver food, essential goods, and education/training
+                        programs. Providing them a better shelter in their own localities.
+                    </p>
+                </div>
+            </div>
+            <div class="item crsl-4 d-flex align-items-center ">
+                <div class="card plan-card">
+                    <h2 class="intro-head">
+                        Local Partnerships
+                    </h2>
+                    <p>
+                        Collaborate with local community
+                        organizations, NGOs, and government bodies to ensure effective
+                        implementation of the charity programs in different regions.
+                    </p>
+                </div>
+            </div>
+            <div class="item crsl-4 d-flex align-items-center ">
+                <div class="card plan-card">
+                    <h2 class="intro-head">
+                        Data Analysis and Targeting
+                    </h2>
+                    <p>
+                        Utilize data analysis to identify
+                        areas with the highest need and target efforts towards these
+                        areas
+                    </p>
+                </div>
+            </div>
+            <div class="item crsl-4 d-flex align-items-center ">
+                <div class="card plan-card">
+                    <h2 class="intro-head">
+                        Sustainability Planning
+                    </h2>
+                    <p>
+                        Develop long-term sustainability
+                        plans for the charity initiative, including fundraising, volunteer
+                        engagement, and measuring the impact of the programs
+                    </p>
+                </div>
+            </div>
+            <div class="item crsl-4 d-flex align-items-center ">
+                <div class="card plan-card">
+                    <h2 class="intro-head">
+                        Feedback and Improvement
+                    </h2>
+                    <p>
+                        Continuously gather feedback
+                        from beneficiaries and stakeholders to improve the
+                        effectiveness and relevance of the charity programs
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- execution planm -->
+
+
+
+    <!-- target area -->
+    <div class="container-fluid target-cont mb-3"
+        style="background-image: url(images/WhatsApp\ Image\ 2024-03-06\ at\ 19.02.26.jpeg); background-position: center; background-size: cover;">
+        <div class="bg-grad target"></div>
+        <div class="container target-cont-head">
+            <h1 class="intro-head text-center ">
+                <span class="intro-head-1">
+                    Target
+                </span> Area
+            </h1>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex justify-content-center mt-2">
+                <div class="card bg-transparent text-white" style="width: 18rem; border: none !important;">
+                    <div class="card-body">
+                        <h2 class="card-title intro-head">NGOs</h2>
+
+                        <p class="card-text">Collaborating with NGOs can enhance the reach and
+                            impact of the charity programs. NGOs often have
+                            established networks, resources, and expertise in
+                            working with marginalized populations. By partnering
+                            with NGOs that focus on education, women
+                            empowerment, and community development, RB Corp
+                            can leverage their existing infrastructure to efficiently
+                            deliver food, goods, and training programs..</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex justify-content-center mt-2">
+                <div class="card bg-transparent text-white" style="width: 18rem; border: none !important;">
+                    <div class="card-body">
+                        <h2 class="card-title intro-head">Slums</h2>
+
+                        <p class="card-text">Slum areas are often home to a large population facing
+                            economic, social, and health challenges. By targeting
+                            these areas, the charity can directly impact vulnerable
+                            communities who may lack access to basic necessities.
+                            The focus in slum areas can help alleviate food
+                            insecurity, provide essential goods, and offer training
+                            opportunities to enhance livelihoods and skills
+                            development within these communities.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex justify-content-center mt-2">
+                <div class="card bg-transparent text-white" style="width: 18rem; border: none !important;">
+                    <div class="card-body">
+                        <h2 class="card-title intro-head">Tailored Support</h2>
+                        <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
+                        <p class="card-text">
+                            The charity's focus on individuals who are less educated,
+                            illiterate, housewives, and widows acknowledges
+                            specific challenges faced by these groups. Providing
+                            tailored support such as literacy programs, vocational
+                            training, life skills workshops, and empowerment
+                            initiatives can help break societal barriers and empower
+                            these individuals to improve their quality of life.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex justify-content-center mt-2">
+                <div class="card bg-transparent text-white" style="width: 18rem; border: none !important;">
+                    <div class="card-body">
+                        <h2 class="card-title intro-head">Empowerment and <br>
+                            Sustainability</h2>
+                        <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
+                        <p class="card-text">Through these targeted interventions in slum areas and
+                            collaboration with NGOs, the Plan of Charity can contribute to
+                            the empowerment of marginalized communities. By providing
+                            essential resources and education opportunities, the charity
+                            aims to create sustainable change that uplifts individuals and
+                            communities from poverty and social constraints.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- target area -->
+    <!-- footer -->
+    <section class="footer pt-5 ">
+        <!-- Footer -->
+        <footer class="">
+            <!-- Grid container -->
+            <div class="container p-4">
+                <!--Grid row-->
+                <div class="row">
+                    <!--Grid column-->
+                    <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                        <a href="index.html">
+                            <img src="images/Royalties-Service-Connect.png" alt=""
+                                class="img-fluid img-responsive logo">
+                        </a>
+
+                        <p>
+                            Welcome to Royalties Job Agency, where empowerment meets employment! At Royalties Job
+                            Agency, we
+                            believe in the transformative power of education and its ability to open doors to exciting
+                            vocational opportunities.
+                        </p>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase">Training</h5>
+
+                        <ul class="list-unstyled mb-0 mt-3">
+                            <li>
+                                <a href="driver.html" class="text-body ftr-link">Driver</a>
+                            </li>
+                            <li>
+                                <a href="chef.html" class="text-body ftr-link">Chef</a>
+                            </li>
+                            <li>
+                                <a href="tailor.html" class="text-body ftr-link">Tailor</a>
+                            </li>
+                            <li>
+                                <a href="baby-sitting.html" class="text-body ftr-link">Baby Sitter</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase mb-0">Important Links</h5>
+
+                        <ul class="list-unstyled mt-3">
+                            <li>
+                                <a href="#!" class="text-body ftr-link">Terms and Conditions</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-body ftr-link">Privacy</a>
+                            </li>
+                            <li>
+                                <a href="contact.html" class="text-body ftr-link">Contact</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-body ftr-link">Trainers</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--Grid column-->
+                </div>
+                <!--Grid row-->
+            </div>
+            <!-- Grid container -->
+
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+                <i class="fa-brands fa-facebook ms-3 ftr-logo"></i>
+                <i class="fa-brands fa-instagram ms-3 ftr-logo"></i>
+                <i class="fa-brands fa-youtube ms-3 ftr-logo"></i>
+            </div>
+            <!-- Copyright -->
+        </footer>
+        <!-- Footer -->
+    </section>
+    <!-- footer -->
+
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- bootstrap js -->
+
+    <!-- Bootstrap and jquery cdn -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <!-- Bootstrap and jquery cdn -->
+
+
+    <!-- owl crosusel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <script>
+        // owl
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: false,
+            dots: false,
+            autoplay: true,
+            autoplayTimeout: 3000,
+            lazyLoad: true,
+            animateOut: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 2
+                },
+                1000: {
+                    items: 4
+                }
+            }
+        })
+        // owl
+    </script>
+</body>
+
+</html>

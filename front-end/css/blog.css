@@ -1,0 +1,9 @@
+.hero{
+    background-image: url('../images/create-a-blog-page-hero-section-background-image.jpg');
+    background-repeat: no-repeat;
+    background-size: cover ;
+    position: relative;
+    z-index: 1;
+    max-height: 100vh;
+    min-height: 100vh;
+}

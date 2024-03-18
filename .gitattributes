@@ -1,0 +1,4 @@
+*.psd filter=lfs diff=lfs merge=lfs -text
+3798bbfaac72052052ee66fb57bc7f41a82d886da82afee349475790e98b8d51 filter=lfs diff=lfs merge=lfs -text
+front-end/images/C0045.MP4[[:space:]]is[[:space:]]188.02[[:space:]]MB;[[:space:]]this[[:space:]]exceeds[[:space:]]GitHub's[[:space:]]file[[:space:]]size[[:space:]]limit[[:space:]]of[[:space:]]100.00[[:space:]]MB filter=lfs diff=lfs merge=lfs -text
+front-end/images/C0045.MP4 filter=lfs diff=lfs merge=lfs -text

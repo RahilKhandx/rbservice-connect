@@ -1,0 +1,54 @@
+.misson{
+   position: relative !important;
+}
+.bg-grad-mssn{
+    height:100%;
+    width: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.591) ;
+    left: 1;
+}
+.mission-cont{
+    z-index: 1;
+
+}
+.plan-card{
+    border: none !important;
+}
+.intro-pic-cont{
+    position: relative;
+}
+.intro-pic-2{
+    position: absolute;
+    width: 40%;
+    height: 50%;
+    right: 20px;
+    bottom: 80px;
+   
+}
+.intro-pic-1{
+    filter: grayscale(90%);
+}
+.btn-intro{
+    background-color: #7F9F80;
+    color: white;
+}
+.btn-intro:hover{
+    background-color: #FF9800;
+    color:white;
+}
+.target-cont{
+    position: relative;
+}
+.bg-grad-target{
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    right: 20px;
+    bottom: 20px;
+    z-index: -3 !important;
+}
+.target-cont-head{
+    z-index: 5 !important;
+    display: none !important;
+}

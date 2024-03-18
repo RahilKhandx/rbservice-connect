@@ -1,0 +1,123 @@
+.intro-pic-cont {
+    position: relative;
+}
+
+.intro-pic-2 {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    right: 20px;
+    bottom: 20px;
+}
+
+.btn-intro {
+    background-color: #7F9F80;
+    color: white;
+}
+
+.btn-intro:hover {
+    background-color: #FF9800;
+    color: white;
+}
+
+.crsl-1 {
+    background-image: url(https://images.pexels.com/photos/716276/pexels-photo-716276.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    z-index: -1 !important;
+
+}
+
+.crsl-2 {
+    background-image: url(https://images.pexels.com/photos/7256198/pexels-photo-7256198.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+
+    z-index: -1 !important;
+}
+
+.crsl-3 {
+    background-image: url(https://images.pexels.com/photos/7256194/pexels-photo-7256194.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    z-index: -1 !important;
+
+}
+
+.crsl-4 {
+    background: url(https://images.pexels.com/photos/7265135/pexels-photo-7265135.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    z-index: -1 !important;
+
+}
+
+.crsl-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.92);
+    z-index: -1 !important;
+}
+
+.crsl-cont {
+    z-index: 2 !important;
+    border: 1px solid white !important;
+}
+
+.crsl-text {
+    color: white;
+    z-index: 2 !important;
+}
+
+.crsl-text-head {
+    color: #FF9800 !important;
+}
+
+.campaign-pic {
+    position: relative;
+}
+
+.campaign-pic-2 {
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+}
+
+.campaign-pic-1 {
+    filter: grayscale();
+}
+
+.campaign-pic-2-1 {
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+}
+
+.news-ltr {
+    background-color: #F9E897;
+}
+
+/* media responsive at 620px */
+@media screen and (max-width: 620px) {
+
+    .campaign-pic-2,
+    .campaign-pic-2-1 {
+        display: none !important;
+    }
+
+    .campaign-pic-1 {
+        filter: none !important;
+    }
+}
+
+/* media responsive at 620px */
